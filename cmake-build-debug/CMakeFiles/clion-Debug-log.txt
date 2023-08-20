@@ -1,0 +1,71 @@
+/home/tomer/Downloads/clion-2023.2/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/tomer/Downloads/clion-2023.2/bin/ninja/linux/x64/ninja -G Ninja -S /home/tomer/Devlopment/NES_Emultor -B /home/tomer/Devlopment/NES_Emultor/cmake-build-debug
+CMake Warning (dev) at CMakeLists.txt:1 (project):
+  cmake_minimum_required() should be called prior to this top-level project()
+  call.  Please see the cmake-commands(7) manual for usage documentation of
+  both commands.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Deprecation Warning at CMakeLists.txt:3 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Warning (dev) at /home/tomer/Downloads/clion-2023.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (SDL2main)
+  does not match the name of the calling package (SDL2).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  cmake/sdl2/FindSDL2.cmake:318 (FIND_PACKAGE_HANDLE_STANDARD_ARGS)
+  CMakeLists.txt:74 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /home/tomer/Downloads/clion-2023.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (SDL2main)
+  does not match the name of the calling package (SDL2).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  cmake/sdl2/FindSDL2.cmake:318 (FIND_PACKAGE_HANDLE_STANDARD_ARGS)
+  cmake/sdl2/FindSDL2_ttf.cmake:114 (find_package)
+  CMakeLists.txt:75 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at lib/CMakeLists.txt:29 (target_link_libraries):
+  Policy CMP0023 is not set: Plain and keyword target_link_libraries
+  signatures cannot be mixed.  Run "cmake --help-policy CMP0023" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  The keyword signature for target_link_libraries has already been used with
+  the target "emu".  All uses of target_link_libraries with a target should
+  be either all-keyword or all-plain.
+
+  The uses of the keyword signature are here:
+
+   * lib/CMakeLists.txt:23 (target_link_libraries)
+   * lib/CMakeLists.txt:24 (target_link_libraries)
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- SDL Libraries: /usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2.so - /usr/lib/x86_64-linux-gnu/libSDL2.so
+-- SDL TTF Libraries: /usr/lib/x86_64-linux-gnu/libSDL2_ttf.so - /usr/lib/x86_64-linux-gnu/libSDL2_ttf.so
+CMake Warning (dev) at /home/tomer/Downloads/clion-2023.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (PkgConfig)
+  does not match the name of the calling package (Check).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /home/tomer/Downloads/clion-2023.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+  cmake/FindCheck.cmake:30 (INCLUDE)
+  tests/CMakeLists.txt:3 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Checking for one of the modules 'Check'
+-- Found CHECK: /usr/lib/x86_64-linux-gnu/libcheck.a
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/tomer/Devlopment/NES_Emultor/cmake-build-debug
